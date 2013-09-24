@@ -6,7 +6,7 @@ Summary:        A collection of scripts for OpenStack TripleO
 Group:          Applications/System
 License:        Apache License (2.0)
 URL:            https://wiki.openstack.org/wiki/TripleO
-Source0:        https://github.com/openstack/tripleo-incubator/archive/HEAD.tar.gz
+Source0:        https://github.com/openstack/tripleo-incubator/archive/7e259f6cc22f59a86e491996f385fb5d4edcea22.tar.gz
 
 
 %description
