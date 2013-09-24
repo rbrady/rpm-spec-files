@@ -18,7 +18,7 @@ need to exist. Other times we will propose the tool for inclusion in an
 existing project (such as nova or glance).  
 
 %prep
-%setup -q -n %{name}
+%setup -q -n 7e259f6cc22f59a86e491996f385fb5d4edcea22
 
 %install
 # Setup directories
