@@ -1,21 +1,21 @@
-Name:           tripleo-incubator
+Name:           tripleo-scripts
 Version:        0.0.1
 Release:        1%{?dist}
-Summary:        An incubator where we incubate new ideas and new tools for TripleO for OpenStack
+Summary:        A collection of scripts for OpenStack TripleO
 
 Group:          Applications/System
 License:        Apache License (2.0)
 URL:            https://wiki.openstack.org/wiki/TripleO
-Source0:        https://github.com/openstack/%{name}/%{name}-%{version}.tar.gz
+Source0:        https://github.com/openstack/tripleo-incubator/archive/HEAD.tar.gz
 
 
 %description
-TripleO is our pithy term for OpenStack deployed on and 
-with OpenStack.  This is an incubator where we incubate new ideas and 
-new tools which get us closer to our goal.  We we move tools to 
-permanent homes in https://github.com/stackforge once they have proved 
-that they do need to exist. Other times we will propose the tool for 
-inclusion in an existing project (such as nova or glance).
+TripleO is our pithy term for OpenStack deployed on and with OpenStack.  
+This package is sourced from an project where we incubate new ideas and 
+new tools which get us closer to our goal.  We we move tools to permanent 
+homes in https://github.com/stackforge once they have proved that they do 
+need to exist. Other times we will propose the tool for inclusion in an 
+existing project (such as nova or glance).  
 
 %prep
 %setup -q -n %{name}
