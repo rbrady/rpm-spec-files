@@ -1,3 +1,6 @@
+%global commit 7e259f6cc22f59a86e491996f385fb5d4edcea22
+%global shortcommit %(c=%{commit}; echo ${c:0:7})
+
 Name:           tripleo-scripts
 Version:        0.0.1
 Release:        1%{?dist}
@@ -6,7 +9,7 @@ Summary:        A collection of scripts for OpenStack TripleO
 Group:          Applications/System
 License:        Apache License (2.0)
 URL:            https://wiki.openstack.org/wiki/TripleO
-Source0:        https://github.com/openstack/tripleo-incubator/archive/7e259f6cc22f59a86e491996f385fb5d4edcea22.tar.gz
+Source0:        https://github.com/openstack/tripleo-incubator/archive/%{commit}.tar.gz
 
 
 %description
@@ -18,7 +21,7 @@ need to exist. Other times we will propose the tool for inclusion in an
 existing project (such as nova or glance).  
 
 %prep
-%setup -q -n 7e259f6cc22f59a86e491996f385fb5d4edcea22
+%setup -q -n %{name}-%{commit}
 
 %install
 # Setup directories
